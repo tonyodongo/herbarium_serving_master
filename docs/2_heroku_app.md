@@ -4,7 +4,7 @@
 
 ### Input to Heroku App
 
-This output file, **`model.pth`** is the input to the Heroku app.  
+This output file, **`reproductive_xception_850_cont4_lr_93.207.hdf5`** is the input to the Heroku app.  
 
  
 ### Test running the web app
@@ -21,7 +21,7 @@ wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 heroku login
 heroku container:login
 
-APP_NAME="food-img-classifier"
+APP_NAME="reproductive-status-img-classifier"
 heroku create $APP_NAME
 
 heroku container:push web --app ${APP_NAME}
